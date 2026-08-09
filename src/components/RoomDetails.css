@@ -1,0 +1,86 @@
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  margin:0;
+}
+
+.slider-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slider-track img {
+  width: calc(100% / 2); 
+  flex-shrink: 0;
+  object-fit: cover;
+   display: block;
+    height: 300px;
+
+}
+
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background:rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.left { left: 0; }
+.right { right: 0; }
+
+.room-details {
+  padding: 30px;
+}
+
+.room-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.room-price {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  z-index:999;
+
+
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index:999;
+
+}
+
+.dot.active {
+  background: hotpink;
+  transform: scale(1.3);
+}
+
