@@ -3,8 +3,10 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Rooms from "./components/Rooms";
 import RoomDetails from "./components/RoomDetails";
-import RoomsPage from "./components/RoomsPage";
-
+import RoomsPage from "./components/Roomspage";
+import Counter from "./components/Counter";
+import Login from "./components/Login";
+import LoginPage from "./components/Loginpage";
 function App() {
   return (
     <Routes>
@@ -12,8 +14,9 @@ function App() {
         path="/"
         element={
           <>
-            <Header />
+            <Header/>
             <Hero />
+             <Counter />
           </>
         }
       />
@@ -26,6 +29,10 @@ function App() {
       <Route
         path="/rooms"
         element={<RoomsPage />}
+      />
+      <Route
+        path="/login-details"
+        element={<LoginPage/>}
       />
     </Routes>
 
